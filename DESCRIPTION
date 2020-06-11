@@ -1,6 +1,6 @@
 Package: universals
 Title: S3 Generics for Bayesian Analyses
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     c(person(given = "Joe",
              family = "Thorley",
@@ -23,9 +23,9 @@ Language: en-US
 LazyData: true
 RoxygenNote: 7.1.0
 NeedsCompilation: no
-Packaged: 2020-05-19 22:07:23 UTC; joe
+Packaged: 2020-06-11 20:04:21 UTC; joe
 Author: Joe Thorley [aut, cre] (<https://orcid.org/0000-0002-7683-4592>),
   Poisson Consulting [cph, fnd]
 Maintainer: Joe Thorley <joe@poissonconsulting.ca>
 Repository: CRAN
-Date/Publication: 2020-05-31 09:50:02 UTC
+Date/Publication: 2020-06-11 20:10:02 UTC
