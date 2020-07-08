@@ -6,9 +6,9 @@
 #' @return A named list of integer vectors of the dimensions of each parameter.
 #' @family dimensions
 #' @export
-#' @examples
-#' pdims.foobar <- function(x, ...) {
-#'   NotYetImplemented()
-#'   # replace with code to get pdims for an object of class 'foobar'
-#' }
+#' @examplesIf requireNamespace("nlist", quietly = TRUE)
+#' library(nlist)
+#'
+#' pdims(nlist(x = 1:3))
+#' pdims(nlist(y = 3, zz = matrix(2:5, 2)))
 pdims <- function(x, ...) UseMethod("pdims")

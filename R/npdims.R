@@ -6,10 +6,11 @@
 #' @return A named integer vector of the number of dimensions of each parameter.
 #' @family dimensions
 #' @export
-#' @examples
-#' npdims.foobar <- function(x, ...) {
-#'   vapply(pdims(x, ...), length, 1L)
-#' }
+#' @examplesIf requireNamespace("nlist", quietly = TRUE)
+#' library(nlist)
+#'
+#' npdims(nlist(x = 1:3))
+#' npdims(nlist(y = 3, zz = matrix(2:5, 2)))
 npdims <- function(x, ...) UseMethod("npdims")
 
 #' @description
