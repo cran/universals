@@ -2,9 +2,12 @@
 % Please edit documentation in R/collapse-chains.R
 \name{collapse_chains}
 \alias{collapse_chains}
+\alias{collapse_chains.default}
 \title{Collapse Chains}
 \usage{
 collapse_chains(x, ...)
+
+\method{collapse_chains}{default}(x, ...)
 }
 \arguments{
 \item{x}{An object.}
@@ -20,6 +23,7 @@ Collapses an MCMC object's chains into a single chain.
 \seealso{
 Other MCMC manipulations: 
 \code{\link{bind_chains}()},
+\code{\link{bind_iterations}()},
 \code{\link{estimates}()},
 \code{\link{split_chains}()}
 }

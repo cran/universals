@@ -21,6 +21,7 @@ Binds two MCMC objects (with the same parameters and iterations) by chains.
 }
 \seealso{
 Other MCMC manipulations: 
+\code{\link{bind_iterations}()},
 \code{\link{collapse_chains}()},
 \code{\link{estimates}()},
 \code{\link{split_chains}()}

@@ -1,3 +1,7 @@
+# universals 0.0.4
+
+- Added bind_iterations() generic.
+
 # universals 0.0.3
 
 - Minimum version `R >= 3.4`
