@@ -1,29 +1,27 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# universals
+# universals <img src="man/figures/logo.png" align="right" />
 
 <!-- badges: start -->
 
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![R build
-status](https://github.com/poissonconsulting/universals/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/universals/actions)
-[![Codecov test
-coverage](https://codecov.io/gh/poissonconsulting/universals/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/universals?branch=master)
-[![status](https://tinyverse.netlify.com/badge/universals)](https://CRAN.R-project.org/package=universals)
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![R-CMD-check](https://github.com/poissonconsulting/universals/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/universals/actions/workflows/R-CMD-check.yaml)
+[![codecov](https://codecov.io/gh/poissonconsulting/universals/branch/main/graph/badge.svg?token=iSrKzkDv8E)](https://app.codecov.io/gh/poissonconsulting/universals)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/universals)](https://cran.r-project.org/package=universals)
 ![CRAN downloads](https://cranlogs.r-pkg.org/badges/universals)
+
 <!-- badges: end -->
 
 `universals` provides S3 generic methods and some default
 implementations for Bayesian analyses that generate Markov Chain Monte
 Carlo (MCMC) samples.
 
-The purpose of ‘universals’ is to reduce package dependencies and
+The purpose of `universals` is to reduce package dependencies and
 conflicts.
 
 ## Philosophy
@@ -35,15 +33,15 @@ used for Maximum Likelihood (ML) and other types of analyses.
 The names of the functions are based on the following
 definitions/concepts:
 
-  - A `term` is a single real or integer `value`.
-  - A `par` (short for parameter) is a numeric object of terms.
-  - An MCMC object is a collection of MCMC samples that refer to a set
+-   A `term` is a single real or integer `value`.
+-   A `par` (short for parameter) is a numeric object of terms.
+-   An MCMC object is a collection of MCMC samples that refer to a set
     of terms.
-  - The samples are arranged in one or more `chains` of the same length
+-   The samples are arranged in one or more `chains` of the same length
     (number of `iterations`).
-  - The number of `simulations` is the product of the number of
+-   The number of `simulations` is the product of the number of
     iterations and the number of chains.
-  - The number of `samples` is the product of the number of simulations
+-   The number of `samples` is the product of the number of simulations
     and the number of `terms`.
 
 The ‘nlist’ package implements many of the methods for its ‘nlists’
@@ -78,6 +76,10 @@ following `roxygen2` code:
 #' @export
 universals::pars
 ```
+
+## Inspiration
+
+-   [r-lib/generics](https://github.com/r-lib/generics)
 
 ## Contribution
 
